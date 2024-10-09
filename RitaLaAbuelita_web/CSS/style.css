@@ -1,0 +1,1896 @@
+* 
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    background-color:rgb(211, 214, 190);
+}
+
+#menu 
+{
+    position: relative;
+    
+    position: fixed;
+}
+#menu ul
+{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    background-color: rgb(255, 218, 119);
+    align-items: center;
+    border-width:.25vw;
+    border-style:solid;
+    flex-direction: row;
+    position: fixed;
+}
+#menu ul div li 
+{
+    margin: 0 10px;
+}
+#menu ul div li a 
+{
+    color: black;
+    text-decoration: none;
+    font-size:2rem;
+    font-weight: bold;
+    transition: 0.3s; 
+    padding-right: 3.25vw;
+    display: block;
+    padding: 10px;
+}
+#menu ul div li a:hover
+{
+    font-weight: lighter;
+}
+#menu ul li.Logo-menu
+{
+    margin-top: 0.1vh;
+    padding-left: 0.5vw;
+    padding-right: 1vw;
+    display: flex;
+    flex-direction: row;
+}
+#menu ul li.Logo-menu img
+{
+    display: none;
+}
+#menu ul li.Logo-menu a
+{
+    padding-left:1.75vw;
+    padding-right:1.75vw;
+}
+#menuToggle 
+{
+    display: none;
+}
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+.menu-icon span {
+    height: 0.3vh;
+    width: 6vw;
+    background-color: rgb(255, 218, 119);
+    margin-top: 0.5vh;
+    margin-right: 0.25vw;
+    margin-left: 0.25vw;
+    margin-bottom: 0.5vh;
+    transition: 0.4s;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#header-img
+{
+    width:auto;
+    height:100vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-image: url("../media/fotos/Pantalla inicio rita.png");
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 4em;
+    border-width:.25vw;
+    border-style:solid;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+
+
+
+
+.contenedor-botonJugar button
+{
+    display:flex;
+    justify-content:center;
+    margin:auto;
+    width: 20vw;
+    background-color: rgb(255, 218, 119);
+    padding: 1vw;
+    border-color: rgb(0, 0, 0);
+    border-width:.25vw;
+    border-style:solid;
+   
+}
+.contenedor-botonJugar button a
+{
+    transition: 0.3s; 
+    color:#000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family:'Times New Roman', Times, serif;
+}
+.contenedor-botonJugar button:hover
+{
+    background-color:rgb(175, 150, 80);
+}
+
+
+
+
+
+#InfoInicio
+{
+    background-color: rgba(214, 96, 100, 1);
+    border-color: rgb(0, 0, 0);
+    border-width:.25vw;
+    border-style:solid;
+    margin-top: 15vh;
+    display: flex;
+    justify-content:center;
+}
+#InfoInicio div
+{
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+}
+#InfoInicio div h2
+{
+    padding-top: 6vh;
+    font-size:3rem;
+    font-family:'Times New Roman', Times, serif;
+    color:rgb(255, 218, 119);
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    margin-left: 5vw;
+}
+#InfoInicio div p
+{
+    font-size: 1.5rem;
+    font-family:'Times New Roman', Times, serif;
+    padding-right: 5vw;
+    margin-left: 5vw;
+    color:#000000;
+}
+#InfoInicio  div p a span
+{
+    color:rgb(255, 218, 119);
+    text-decoration:underline;
+    transition: 0.3s; 
+}
+#InfoInicio a 
+{
+    padding-top: 4vh;
+}
+
+
+
+
+
+
+#entre-parrafos
+{
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+}
+#entre-parrafos li a
+{
+    padding-left: 3vw;
+    padding-right:3vw;
+    display: flex;
+    justify-content: center;
+}
+#entre-parrafos li a img
+{
+   width: 300px;
+   height: 280px;
+}
+.parrafo_entre-parrafos
+{
+    color:rgb(255, 218, 119);
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    transition: 0.3s; 
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+
+
+
+
+
+#pie-pagina
+{
+    background-color: rgb(255, 218, 119);
+    margin-top: 15vh;
+}
+#pie-pagina div
+{
+    list-style: none;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+#pie-pagina div li
+{
+    margin-left: 3vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1
+{
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+    font-size:5rem;
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 3vw;
+    color: rgb(255, 218, 119);
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+
+
+
+
+
+#Inicio-Receta
+{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 5vh;
+}
+#Inicio-Receta div p
+{
+    margin-top: 4vh;
+    font-size: 2rem;
+    margin-bottom: 3vh;
+    font-weight: bold;
+    margin-right: 3vh ;
+}
+#Inicio-Receta div h2
+{
+    font-size: 2.5rem;
+    margin-bottom: 3vh;
+}
+#Inicio-Receta div li
+{
+    list-style: none;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    padding-left: 2vh;
+}
+#Inicio-Receta div li a
+{
+    font-size: 1.5rem;
+}
+#Inicio-Receta a img
+{
+    padding-top: 1vh;
+}
+
+
+
+
+
+#Preparacion-Receta
+{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 3vh;
+    background-color: rgba(214, 96, 100, 1);
+    border-color: rgb(0, 0, 0);
+    border-width:.25vw;
+    border-style:solid;
+    padding: 3vh;
+}
+#Preparacion-Receta div h2
+{
+    font-size: 2.5rem;
+    margin-bottom: 3vh;
+}
+#Preparacion-Receta div li
+{
+    list-style: none;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    padding-left: 2vh;
+}
+#Preparacion-Receta div li a
+{
+    font-size: 1.5rem;
+    padding:1vh;
+}
+.Preparaccion
+{
+    font-style:italic;
+}
+.Image-cortes
+{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.Image-cortes img
+{
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Personajes-selection
+{
+    display: flex;
+    justify-content:space-between;
+    justify-content:end;
+    flex-direction:row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+}
+#Personajes-selection li
+{
+    list-style: none;
+}
+
+
+
+
+
+
+#pers_der
+{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 3vh;
+    background-color: rgba(214, 96, 100, 1);
+    border-color: rgb(0, 0, 0);
+    border-width:.25vw;
+    border-style:solid;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    margin-top: 5vw;
+}
+#pers_der div 
+{
+    display:block;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 4vw;
+    padding-left: 4vw;
+}
+#pers_der div p
+{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+#pers_izq
+{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 3vh;
+    background-color: rgba(214, 96, 100, 1);
+    border-color: rgb(0, 0, 0);
+    border-width:.25vw;
+    border-style:solid;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    margin-top: 5vw;
+}
+#pers_izq div 
+{
+    display:block;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 4vw;
+    padding-left: 4vw;
+}
+#pers_izq div p
+{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.personaje-name
+{
+    font-size: 2.75rem;
+    font-weight: bold;
+    color: rgb(255, 218, 119);
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Quienes-somos-info
+{
+    background-color: rgba(214, 96, 100, 1);
+    border-color: rgb(0, 0, 0);
+    border-width:.25vw;
+    border-style:solid;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin-top: 3vh;
+    display: flex;
+    justify-content: space-evenly;   
+}
+.Quienes-somos-image
+{
+    padding-left: 7vw;
+    padding-right: 4vw;
+    margin: auto;
+}
+.Quienes-somos-selection
+{
+    padding-left: 4vw;
+    padding-right: 7vw;
+}
+.Quienes-somos-selection p
+{
+    font-size: 1.5rem;
+}
+.Quienes-somos-selection ul
+{
+    display:flex;
+    flex-direction: column;
+    padding-left: 2vw;
+}
+.Quienes-somos-selection ul li a
+{
+    font-style: italic;
+    font-size: 1.5rem;
+}
+.Quienes-somos-selection ul li ul 
+{
+    list-style: circle;
+}
+.Quienes-somos-selection ul li ul li
+{
+    display:flex;
+    flex-direction: column;
+    padding-left: 2vw;
+}
+.Quienes-somos-selection ul li ul li a
+{
+    font-style: normal;
+    font-size: 1.5rem;
+}
+.Quienes-somos-Titulo
+{
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(255, 218, 119);
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    padding-bottom: 2vh;
+}
+
+
+
+
+
+#Desarrollo-info
+{
+    margin-top: 15vh;
+    background-color: rgba(214, 96, 100, 1);
+    border-color: rgb(0, 0, 0);
+    border-width:.25vw;
+    border-style:solid;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    display: flex;
+}
+.Desarrollo-selection
+{
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+.Desarrollo-selection p
+{
+    font-size: 1.5rem;
+}
+.Desarrollo-selection p a span
+{
+    color:rgb(255, 218, 119);
+    text-decoration:underline;
+    transition: 0.3s;
+}
+.Desarrollo-Titulo
+{
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(255, 218, 119);
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    padding-bottom: 2vh;
+}
+
+
+
+
+
+
+
+
+#Pueblo-info
+{
+    background-color: rgba(214, 96, 100, 1);
+    border-color: rgb(0, 0, 0);
+    border-width:.25vw;
+    border-style:solid;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin-top: 3vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Pueblo-section p a span
+{
+    color:rgb(255, 218, 119);
+    text-decoration:underline;
+    transition: 0.3s;
+}
+.Pueblo-section
+{
+    padding-left: 4vw;
+    padding-right: 7vw;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.Pueblo-section p
+{
+    font-size: 1.5rem;
+}
+.Pueblo-image
+{
+    padding-left: 7vw;
+    padding-right: 4vw;
+    margin: auto;
+}
+
+
+
+
+
+#Galeria-info
+{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin-top: 3vh;
+}
+.Galeria-section
+{
+    padding-left: 4vw;
+    padding-right: 7vw;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.Galeria-section div p, .Galeria-section div ul li
+{
+    font-size: 1.5rem;
+}
+.Galeria-divisor
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.Galeria-divisor-texto
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Galeria-image
+{
+    padding-left: 7vw;
+    padding-right: 4vw;
+    margin: auto;
+}
+.Images-galeria-grupos
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.Images-cabezas
+{
+    padding-left: 1vw;
+    padding-right: 2vw;
+}
+.Images-alimentos
+{
+    padding-left: 5vw;
+    padding-right: 2vw;
+}
+.Galeria-vertical
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+#RitaMedia
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+
+#RitaMedia div p
+{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    font-size: 1.5rem ;
+}
+
+#RitaMedia div p a span
+{
+    font-style: italic;
+}
+
+#RitaMedia div a iframe
+{
+    width: 60vw; 
+    height: 65vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.intro_fiestas
+{
+    background-color: rgba(214, 96, 100, 1);
+    border-color: rgb(0, 0, 0);
+    border-width:.25vw;
+    border-style:solid;
+    font-size: 2rem;
+    padding-left: 3.25vw;
+    padding-right: 3.25vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    font-weight: bold;
+}
+
+.intro_fiestas a span
+{
+    font-style: italic;
+    
+}
+
+
+
+
+#info-fiestasizq
+{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 3vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    margin-top: 5vw;
+    
+}
+
+#info-fiestasizq div
+{
+    display:block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+#info-fiestasizq div p
+{
+    font-size: 1.5rem;
+}
+
+#info-fiestasizq div p a span
+{
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+#info-fiestasder
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    margin-left: 7vw;
+    margin-right: 3.25vw;
+    margin-top: 3vh;
+    
+}
+
+#info-fiestasder div
+{
+    display:block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+#info-fiestasder div p
+{
+    font-size: 1.5rem;
+}
+
+#info-fiestasder div p a span
+{
+    font-style: italic;
+    font-weight: bold;
+}
+
+#formu
+{
+    display: flex;
+    justify-content:center;
+    background-color: rgba(214, 96, 100, 1);
+    border-color: rgb(0, 0, 0);
+    border-width:.25vw;
+    border-style:solid;
+    padding:3vh;
+}
+#formu form label
+{
+    font-size: 1.5rem;
+}
+#formu form input
+{
+    font-size: 1.5rem;
+    width:300px;
+}
+#formu form input[type="submit"]
+{
+    background-color:rgb(255, 218, 119);
+}
+#formu form input[type="submit"]:hover
+{
+    background-color:rgb(175, 150, 80);
+}
+
+
+@media only screen and (max-width:  1280px)  /*TABLET*/
+{
+    h1
+    {
+        padding-top: 8vh;
+        font-size:4rem;
+        -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+        padding-bottom: 3vh;
+    }
+    #menu ul li a 
+    {
+        font-size: 1.5rem;
+        font-weight: bold;
+        transition: 0.3s; 
+        background-color: rgb(255, 218, 119);
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
+    }
+   
+
+
+    .contenedor-botonJugar button
+    {
+        width: 20vw;
+    }
+    .contenedor-botonJugar button a
+    {
+        font-size:1.3rem;
+    }
+
+
+    #menu ul div li a 
+    {
+    
+        font-size:1.5rem;
+    }
+
+
+    #InfoInicio
+    {
+        flex-wrap: wrap;
+        margin-top: 7vh;
+        padding-bottom: 4vh;
+    }
+    #InfoInicio div h2
+    {
+        padding-top: 4vh;
+        font-size:3rem;
+        -webkit-text-stroke: 1.2px rgb(0, 0, 0);
+        margin-bottom: 1vh;
+    }
+    #InfoInicio div p
+    {
+        font-size:1.6rem;
+        margin-right: 1vh;
+    }
+    #InfoInicio .image-InfoInicio img
+    {
+        width: 250px; 
+        height: 220px;
+    }
+    
+    #entre-parrafos
+    {
+        margin-top: 7vh;
+        margin-bottom: 2vh;
+        margin-left:5vw;
+        margin-right: 5vw;
+    }
+    #entre-parrafos li a
+    {
+        padding: 1vw;
+    }
+    #entre-parrafos li a img
+    {
+        width: 250px; 
+        height: 230px;
+    }
+    .parrafo_entre-parrafos
+    {
+        font-size: 2rem;
+    }
+   
+    #pie-pagina
+    {
+        margin-top: 10vh;
+    }
+    #pie-pagina div li .imgItchio img
+    {
+        width: 150px; 
+        height: 40px;
+    }
+    #pie-pagina div li .imgInsta img
+    {
+        width: 40px; 
+        height: 40px;
+    }
+
+    #header-img
+    {
+        height:80vh;
+    }
+
+
+
+
+
+
+
+
+
+    #Inicio-Receta
+    {
+        margin-bottom: 4vh;
+    }
+    #Inicio-Receta div p
+    {
+        margin-top: 3vh;
+        font-size: 1.5rem;
+        margin-bottom: 2vh;
+        margin-right: 2vh ;
+        margin-left: 2vh ;
+    }
+    #Inicio-Receta div h2
+    {
+        font-size: 2rem;
+        margin-bottom: 2vh;
+    }
+    #Inicio-Receta div li
+    {
+        padding-left: 2vh;
+    }
+    #Inicio-Receta div li a
+    {
+        font-size: 1.3rem;
+    }
+    .image-inicio
+    {
+       margin-top:15vh;
+       margin-left:3vw;
+       margin-right:2vw;
+
+    }
+    #Inicio-Receta a img
+    {
+        width: 300px; 
+        height: 270px;
+    }
+    #Preparacion-Receta
+    {
+        margin-bottom: 2vh;
+        padding: 2vh;
+    }
+    #Preparacion-Receta div h2
+    {
+        font-size: 2rem;
+        margin-bottom: 2vh;
+    }
+    #Preparacion-Receta div li
+    {
+        padding-left: 2vh;
+    }
+    #Preparacion-Receta div li a
+    {
+        font-size: 1.3rem;
+    }
+    .Preparaccion
+    {
+        font-style:italic;
+    }
+    .Image-cortes
+    {
+        justify-content:space-evenly;
+    }
+    
+    .Image-cortes img
+    {
+        width:70%;
+    }
+
+    
+
+
+    #Pueblo-info
+    {
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        margin-top: 2vh;
+    }
+    .Pueblo-section
+    {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+    .Pueblo-section p
+    {
+        font-size: 1.3rem;
+    }
+    .Pueblo-image img 
+    {
+        width: 380px; 
+        height: 360px;
+    }
+
+
+
+    #Quienes-somos-info
+    {
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        margin-top: 2vh;
+        margin-bottom: 6vh;
+    }
+    .Quienes-somos-image img
+    {
+        width: 370px; 
+        height: 350px;
+    }
+    .Quienes-somos-selection
+    {
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    .Quienes-somos-selection p
+    {
+        font-size: 1.3rem;
+    }
+    .Quienes-somos-selection ul
+    {
+        padding-left: 1.7vw;
+    }
+    .Quienes-somos-selection ul li a
+    {
+        font-size: 1.3rem;
+    }
+    .Quienes-somos-selection ul li ul li
+    {
+        padding-left: 1.7vw;
+    }
+    .Quienes-somos-selection ul li ul li a
+    {
+        font-size: 1.3rem;
+    }
+    .Quienes-somos-Titulo
+    {
+        font-size: 2.5rem;
+        -webkit-text-stroke: 1.7px rgb(0, 0, 0);
+    }
+
+
+
+
+
+    #Desarrollo-info
+    {
+        margin-top: 7vh;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        margin-top: 2vh;
+    }
+    .Desarrollo-selection
+    {
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    .Desarrollo-selection p
+    {
+        font-size: 1.3rem;
+    }
+    .Desarrollo-Titulo
+    {
+        font-size: 2.5rem;
+        -webkit-text-stroke:1.7px rgb(0, 0, 0);
+    }
+
+
+
+
+
+
+    #Personajes-selection
+    {
+        padding-bottom: 3vh;
+        padding-top: 3vh;
+    }
+    #Personajes-selection li a img
+    {
+        height:110px;
+    }
+
+
+
+    #pers_der
+    {
+        margin-bottom: 3vh;
+        margin-top: 3vh;
+    }
+    #pers_der div a img
+    {
+        height:250px;
+
+    }
+    #pers_der div 
+    {
+        margin-bottom: 2vh;
+        padding-right: 4vw;
+        padding-left: 4vw;
+    }
+    #pers_der div p
+    {
+        font-size: 1.3rem;
+    }
+
+    .personaje-name
+    {
+        font-size: 3rem;
+    }
+
+
+    #pers_izq
+    {
+        margin-bottom: 3vh;
+        margin-top: 3vh;
+    }
+    #pers_izq div a img
+    {
+        height:250px;
+
+    }
+    #pers_izq div 
+    {
+        padding-right: 4vw;
+        padding-left: 4vw;
+    }
+    #pers_izq div p
+    {
+        font-size: 1.3rem;  
+    }
+
+    .Galeria-image
+    {
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        margin: none;
+    }
+    .Galeria-image-component
+    {
+        padding-left: none;
+        padding-right: none;
+        margin: none;
+
+        width: 75%;
+        height: auto;
+        margin: none;
+    }
+    .Images-cabezas
+    {
+        padding-left: 0vw;
+        padding-right: 0vw;
+    }
+
+
+
+    .Images-galeria-grupos
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .Galeria-text
+    {
+        font-size: 2rem;
+    }
+
+
+    #formu
+    {
+        padding:2vh;
+    }
+    #formu form label
+    {
+        font-size: 1.3rem;
+    }
+    #formu form input
+    {
+        font-size: 1.3rem;
+        width:220px;
+    }
+
+}
+@media only screen and (max-width: 900px) /*TABLET GIRADA, EN CASO DE QUE SE ROMPA POR IMAGENES, ETC*/
+{
+    h1
+    {
+        padding-top: 7vh;
+        font-size:3.5rem;
+        -webkit-text-stroke: 1.25px rgb(0, 0, 0);
+        padding-bottom: 3vh;
+    }
+    .menu-cont, .menu-cont nav
+    {
+        display: block;
+    }
+    .menu-cont .menu-icon 
+    {
+        display: block;
+        position: absolute;
+    }
+    .menu-cont .menu-icon i
+    {
+        font-size: 2em;
+    }
+    .menu-opt
+    {
+        flex-direction: column;
+        max-height: 0px;
+        overflow: hidden;
+        transition: 0.35s;
+    }
+    #menu ul div li a 
+    {
+    
+        font-size:1.3rem;
+    }
+
+    #InfoInicio
+    {
+        margin-top: 5vh;
+        padding-bottom: 3vh;
+    }
+    .contenedor-botonJugar button
+    {
+        width: 25vw;
+    }
+    .contenedor-botonJugar button a
+    {
+        font-size:2.5vw;
+    }
+    #InfoInicio div h2
+    {
+        padding-top: 3vh;
+        font-size:6vw;
+        -webkit-text-stroke: 0.9px rgb(0, 0, 0);
+    }
+    #InfoInicio div p
+    {
+        font-size: 1rem;
+    }
+    #InfoInicio .image-InfoInicio img
+    {
+        width: 200px; 
+        height: 170px;
+    }
+
+    #entre-parrafos
+    {
+        flex-direction: column;
+    }
+    #entre-parrafos li a img
+    {
+        width: 300px; 
+        height: 270px;
+    }
+
+    #pie-pagina
+    {
+        margin-top: 7vh;
+    }
+    #pie-pagina div 
+    {
+        padding-top: 1.5vh;
+        padding-bottom: 1vh;
+    }
+    #pie-pagina div li .imgItchio img
+    {
+        width:80px; 
+        height: 20px;
+    }
+    #pie-pagina div li .imgInsta img
+    {
+        width: 20px; 
+        height: 20px;
+    }
+
+    #header-img
+    {
+        height:60vh;
+    }
+
+
+}
+
+@media (max-width: 900px) 
+{
+    .menu-toggle {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+@media (max-width: 782px) /*MOVIL*/
+{
+    h1
+    {
+        font-size:2.45rem;
+        -webkit-text-stroke: 1px rgb(0, 0, 0);
+        padding-bottom: 2vh;
+    }
+    .menu-icon 
+    {
+        display: flex;
+        border-width:.25vw;
+        border-style:solid;
+        background-color: rgba(214, 96, 100, 1);
+    }
+
+    #menu ul 
+    {
+        flex-direction: column;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-out;
+        border-width:none;
+        border-style:none;
+    }
+
+    #menu ul div li {
+        text-align: center;
+        margin: 0;
+    }
+
+    #menuToggle:checked + .menu-icon + ul {
+        max-height: 300px;
+    }
+
+    #header-img
+    {
+        height:60vh;
+    }
+
+    #Inicio-Receta
+    {
+        flex-direction: column-reverse;
+    }
+    #Inicio-Receta div p
+    {
+        margin-top: 2vh;
+        font-size: 1.25rem;
+        margin-bottom:2vh;
+        margin-right: 2vh ;
+    }
+    #Inicio-Receta div h2
+    {
+        font-size: 1.7rem;
+        padding-left: 2vw;
+    }
+    #Inicio-Receta div li
+    {
+        padding-left: 2vh;
+    }
+    #Inicio-Receta div li a
+    {
+        font-size: 1rem;
+    }
+    .image-inicio
+    {
+        margin-top:2vh;
+        display: flex;
+        justify-content: center;
+    }
+    #Inicio-Receta a img
+    {
+        width: 250px; 
+        height: 230px;
+    }
+    #Preparacion-Receta
+    {
+        flex-direction: column;
+        padding: 2vh;
+    }
+    #Preparacion-Receta div h2
+    {
+        font-size: 1.7rem;
+        padding-left: 2vw;
+    }
+    #Preparacion-Receta div li
+    {
+        padding-left: 2vh;
+    }
+    #Preparacion-Receta div li a
+    {
+        font-size: 1rem;
+    }
+    .Preparaccion
+    {
+        font-style:italic;
+    }
+    .Image-cortes
+    {
+        justify-content:space-evenly;
+        flex-direction: row;
+    }
+    .Image-cortes img
+    {
+        width:60%;
+    }
+
+        
+    #RitaMedia div
+    {
+        margin: 2vw;
+    }
+    #RitaMedia div p
+    {
+        font-size: 1rem;
+    }
+    #RitaMedia div a iframe
+    {
+        width: 30vw; 
+        height: 35vh;
+    }
+
+    #info-fiestasizq
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content:space-between;
+        align-items: center;
+        margin-bottom: 5vh;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        margin-top: 5vw;
+        
+    }
+    
+    #info-fiestasizq div
+    {
+        display:block;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 8vw;
+        margin-right: 4vw;
+        margin-bottom: 5vh;
+    }
+
+    #info-fiestasizq div:last-child a img
+    {
+        padding-left:20%;
+        padding-right:20%;
+        height: 200px;
+    }
+
+
+
+    #info-fiestasder
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content:space-between;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 5vh;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        margin-top: 5vw;
+    
+    }
+
+    #info-fiestasder div
+    {
+        display:block;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 4vw;
+        margin-right: 4vw;
+        margin-bottom: 5vh;
+    }
+
+
+    #info-fiestasder div:last-child a img
+    {
+        padding-left:20%;
+        padding-right:20%;
+        height: 200px;
+    }
+
+    .intro_fiestas 
+    {
+        display:flex;
+        width: 100%;
+        font-size: 1.2rem;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+
+    #Pueblo-info
+    {
+        flex-direction: column;
+    }
+    .Pueblo-section
+    {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+    .Pueblo-section p
+    {
+        font-size: 1rem;
+    }
+    .Pueblo-image
+    {
+        display: flex;
+        justify-content: center;
+        
+    }
+    .Pueblo-image img 
+    {
+        width: 250px; 
+        height: 230px;
+    }
+
+
+
+
+
+
+    #Quienes-somos-info
+    {
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        margin-top: 2vh;
+        margin-bottom: 5vh;
+        flex-direction: column-reverse;
+    }
+    .Quienes-somos-image
+    {
+        display:flex;
+        justify-content: center;
+        margin-top: 2.5vh;
+    }
+    .Quienes-somos-image img
+    {
+        width: 250px; 
+        height: 230px;
+    }
+    .Quienes-somos-selection
+    {
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    .Quienes-somos-selection ul
+    {
+        padding-left: 3.7vw;
+    }
+    .Quienes-somos-selection p
+    {
+        font-size: 1rem;
+    }
+    .Quienes-somos-selection ul li a
+    {
+        font-size: 1rem;
+    }
+    .Quienes-somos-selection ul li ul li a
+    {
+        font-size: 1rem;
+    }
+    .Quienes-somos-Titulo
+    {
+        font-size: 2rem;
+        -webkit-text-stroke: 1px rgb(0, 0, 0);
+        padding-bottom: 2vh;
+    }
+
+
+
+
+
+    #Desarrollo-info
+    {
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        margin-top: 2vh;
+        margin-bottom: 5vh;
+    }
+    .Desarrollo-selection
+    {
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    .Desarrollo-selection p
+    {
+        font-size: 1rem;
+    }
+    .Desarrollo-Titulo
+    {
+        font-size: 2rem;
+        -webkit-text-stroke: 1px rgb(0, 0, 0);
+        padding-bottom: 2vh;
+    }
+
+
+
+    #Personajes-selection
+    {
+        display:none;
+    }
+
+
+    #pers_der
+    {
+        flex-direction: column;
+        margin-top: 2vh;
+        margin-bottom: 5vh;
+    }
+    #pers_der div a
+    {
+        display: flex;
+        justify-content: center;
+    }
+    #pers_der div a img
+    {
+        height:150px;
+
+    }
+    #pers_der div 
+    {
+        margin-bottom: 1vh;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    #pers_der div p
+    {
+        font-size: 1rem;
+    }
+    
+    .personaje-name
+    {
+        font-size: 2.1rem;
+        -webkit-text-stroke: 1.3px rgb(0, 0, 0);
+    }
+
+
+    #pers_izq
+    {
+        flex-direction: column-reverse;
+        margin-top: 2vh;
+        margin-bottom: 5vh;
+    }
+    #pers_izq div a
+    {
+        display: flex;
+        justify-content: center;
+    }
+    #pers_izq div 
+    {
+        margin-bottom: 1vh;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    #pers_izq div a img
+    {
+        height:150px;
+
+    }
+    #pers_izq div p
+    {
+        font-size: 1rem;
+    }
+
+    
+    #formu
+    {
+        padding:1vh;
+    }
+    #formu form label
+    {
+        font-size: 1rem;
+    }
+    #formu form input
+    {
+        font-size: 1rem;
+        width:200px;
+    }
+
+
+
+    .Galeria-image
+    {
+        padding-top: 0.25vw;
+        padding-bottom: .025vw;
+        margin: none;
+    }
+    .Galeria-image-component
+    {
+        display: flex;
+        flex-wrap: wrap;
+
+        padding-left: none;
+        padding-right: none;
+        margin: none;
+
+        width: 150%;
+        height: auto;
+        margin: none;
+    }
+    .Galeria-image-abajo-component
+    {
+        display: flex;
+        flex-wrap: wrap;
+
+        padding-left: none;
+        padding-right: none;
+        margin: none;
+
+        width: 150px;
+    }
+    .Galeria-divisor
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        padding-left: none;
+        padding-right: none;
+        margin: none;
+
+        width: 70px;
+    }
+    .Grupo-cabezas
+    {
+        display: none;
+    }
+    .Galeria-divisor .Galeria-vertical
+    {
+        display: none;
+    }
+    .Galeria-divisor .Movil-no
+    {
+        display: none;
+    }
+    .Fondos
+    {
+        height: 170px;
+    }
+    .Galeria-Rita
+    {
+        width: 170px;
+    }
+    .Images-cabezas
+    {
+        padding-left: 0vw;
+        padding-right: 0vw;
+    }
+
+    .Images-galeria-grupos
+    {
+        margin:none;
+        padding: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .HUD-images
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .Galeria-text
+    {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 400px) /*MOVIL PEQUEÑO, EN CASO DE QUE SE ROMPA POR IMAGEN*/
+{
+    #header-img
+    {
+        height:40vh;
+    }
+}
+
