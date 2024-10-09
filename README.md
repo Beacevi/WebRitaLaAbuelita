@@ -1,0 +1,1 @@
+This is my first website. I designed it all by myself in Figma and coded all the HTML and CSS (including the responsive part), except for the 'Gallery' section. This website is for my game 'Rita la Abuelita'. I hope you like it!
